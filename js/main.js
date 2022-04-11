@@ -58,12 +58,12 @@ function emailFunc() {
         textEmail.innerHTML = "";
         let emailkey = emailInput.value.trim();
         try {
-            if (! emailkey.includes('@gmail')) throw "Email bo'lish sharti bajarilmadi"
+            if (! emailkey.includes('@')) throw "Email bo'lish sharti bajarilmadi"
         } catch (e) {
             textEmail.innerHTML = e;
         }
         try {
-            if (! emailkey.includes('.com')) throw "Email bo'lish sharti bajarilmadi"
+            if (! emailkey.includes('.')) throw "Email bo'lish sharti bajarilmadi"
         } catch (e) {
             textEmail.innerHTML = e;
         }
